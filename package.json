@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "test": "stylelint \"scss/**/*.scss\" --syntax=scss",
+    "doiuse": "doiuse build/css/style.css",
     "lint-staged": "lint-staged",
     "precommit": "lint-staged"
   },
@@ -15,8 +16,14 @@
     "type": "git",
     "url": "git+https://github.com/nicothin/stylelint-sass-test.git"
   },
+  "browserslist": [
+    "ie >= 9",
+    "> 1%",
+    "last 2 versions"
+  ],
   "author": "Nikolay Gromov",
   "devDependencies": {
+    "doiuse": "^4.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
     "stylelint": "^9.3.0"
