@@ -1,0 +1,23 @@
+{
+  "name": "stylelint-sass-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "stylelint \"scss/**/*.scss\" --syntax=scss",
+    "lint-staged": "lint-staged",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.css": "stylelint",
+    "*.scss": "stylelint --syntax=scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicothin/stylelint-sass-test.git"
+  },
+  "author": "Nikolay Gromov",
+  "devDependencies": {
+    "lint-staged": "^7.2.0",
+    "stylelint": "^9.3.0"
+  }
+}
