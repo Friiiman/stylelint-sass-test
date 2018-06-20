@@ -1,12 +1,13 @@
 .btn {
-  display: inline-block;
-  border: none;
-  background: #DDDDDD;
-  color: red;
+	display: inline-block;
+	border: none;
+	background: #DDD;
+	color: red;
+	@include        clearfix();
 
-  &:before {
-    content: '';
-    display: block;
-    width: 100%;
-  }
+	&:before {
+		  content: '';
+		display:    block;
+width: 100%;
+	}
 }
